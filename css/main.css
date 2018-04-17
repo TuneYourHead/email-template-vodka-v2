@@ -79,7 +79,7 @@ a {
   width: 100%;
 }
 .two-column .column {
-    width: 100%;
+    width: 50%;
     Margin: 0 auto;
     max-width: 300px;
     display: inline-block;

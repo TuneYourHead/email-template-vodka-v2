@@ -11,6 +11,122 @@
         table {border-collapse: collapse;}
     </style>
     <![endif]-->
+    <style>
+    /* Basics */
+    body {
+        Margin: 0;
+        padding: 0;
+        min-width: 100%;
+        background-color: #ffffff;
+    }
+    table {
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #333333;
+    }
+    td {
+        padding: 0;
+    }
+    img {
+        border: 0;
+    }
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    .webkit {
+        max-width: 800px;
+    }
+
+    /* Windows Phone Viewport Fix */
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    .outer {
+        Margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .full-width-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .inner {
+        padding: 10px;
+    }
+    p {
+        Margin: 0;
+    }
+    a {
+        color: #ee6a56;
+        text-decoration: underline;
+    }
+    .h2 {
+        font-size: 18px;
+        font-weight: bold;
+        Margin-bottom: 12px;
+    }
+
+    /* One column layout */
+    .one-column .contents {
+        text-align: center;
+    }
+    .one-column p {
+        font-size: 14px;
+        Margin-bottom: 10px;
+    }
+
+
+    .two-column {
+        text-align: left;
+        font-size: 0;
+        padding: 0 100px;
+    }
+
+    .two-column img{
+      max-width: 100%;
+      width: 100%;
+    }
+    .two-column .column {
+        width: 50%;
+        Margin: 0 auto;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+
+    /*Three column layout*/
+    .three-column {
+        text-align: center;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .three-column .column {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .three-column .contents {
+        font-size: 14px;
+        text-align: center;
+    }
+    .three-column img {
+        width: 100%;
+        height: auto;
+    }
+    .three-column .text {
+        padding-top: 10px;
+    }
+
+    </style>
 </head>
 <body>
     <center class="wrapper">
@@ -57,7 +173,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="one-column" style="background-color: #000000; padding: 160px 0px">
+                <td class="one-column" style="background-color: #000000; text-align: center; padding: 160px 0px">
                     <table width="100%">
                         <tr>
                             <td class="inner contents">
@@ -318,7 +434,10 @@
         </div>
     </center>
     <style>
-      @media(max-width: 799px){
+      @media(max-width: 400px){
+        .two-column .column{
+          width: 100%!important;
+      }
         .two-column{
           padding: 0 10vw!important;
           text-align: center!important;
